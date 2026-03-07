@@ -915,8 +915,7 @@
   const toggle = document.querySelector('.theme-toggle');
   const html = document.documentElement;
 
-  if (localStorage.getItem('theme') === 'dark' ||
-      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  if (localStorage.getItem('theme') === 'dark') {
     html.setAttribute('data-theme', 'dark');
   }
 
